@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./src/js/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="./src/style/styles.css">
+    <title>Cuidades</title>
+</head>
+<body class="bg-black">
+    <nav class="navbar bg-body-black fixed-top border border-light">
+        <div class="container-fluid">
+            <img src="./src/img/Bandera.png" class="img-fluid" style="width: 50px;" >
+          <a class="navbar-brand fw-bold fs-2 text-info " href="./index.html">Módulo Gestor de Ciudades</a>
+          <button class="navbar-toggler bg-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h2 class="offcanvas-title text-light fw-bold" id="offcanvasNavbarLabel">Modulos</h2>
+              <button type="button" class="btn-close bg-info" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active fs-3 fw-semibold text-light" aria-current="page" href="./views/cuidades.html">Cuidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fs-3 fw-semibold text-light" aria-current="page" href="./views/Departamentos.html">Departamentos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class=" col-12 container-fluid d-flex justify-content-center align-content-center mt-5">
+        <div class="mt-5">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./src/img/carrousel/Bandera.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./src/img/carrousel/Atardecer.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./src/img/carrousel/Paisaje1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./src/img/carrousel/Paisajes2.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+      </div>
+      
+      <div class="container-fluid mt-5  ">
+        <div class="d-flex justify-content-center align-content-center row ">
+          <h1 class="text-center text-light">BUSCA EL ENCANTO DE COLOMBIA</h1>
+          <h1 class="text-center text-bg-info">A TRAVÉS DE NUESTRAS REGIONES</h1>
+        </div>
+        <div class="col-12 row  d-flex justify-content-evenly align-content-center mt-5 mb-5">
+          <div class="card mt-3 bg-transparent text-light border-info" style="width: 23rem;">
+            <img src="./src/img/cards/IMG1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">DESTINOS CON TRADICIONES QUE ENAMORAN</h5>
+              <p class="card-text mt-4">
+                Arte, fiestas, artesanías, música y bailes te mostrarán el encanto único de Colombia.
+              </p>
+              <a href="https://colombia.travel/es" class="btn btn-primary mt-2">Conocer Mas</a>
+            </div>
+          </div>
+          <div class="card mt-3 bg-transparent text-light border-info" style="width: 23rem;">
+            <img src="./src/img/cards/IMG2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">LOS SECRETOS QUE HAY DETRÁS DEL ENCANTO DE COLOMBIA</h5>
+              <p class="card-text mt-4">
+                Recorre un país con encanto en cada rincón, desde sus tradiciones, pasando por su naturaleza y sus sabores, hasta llegar a sus sorprendentes experiencias.
+                </p>
+              <a href="https://colombia.travel/es" class="btn btn-primary mt-2">Conocer Mas</a>
+            </div>
+          </div>
+          <div class="card mt-3 bg-transparent text-light border border-info" style="width: 23rem;">
+            <img src="./src/img/cards/IMG3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">DESTINOS CON EXPERIENCIAS QUE EMOCIONAN</h5>
+              <p class="card-text mt-4">
+                Conocimientos ancestrales y miles de aventuras más te esperan en un país lleno de encanto con escenarios de película.
+                  </p>
+              <a href="https://colombia.travel/es" class="btn btn-primary mt-2 ">Conocer Mas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col-4">
+                    <h3 class="subtitulosPie">Colombia</h3>
+                    <p class="informacion">Colombia, oficialmente República de Colombia, es un país soberano situado en la región noroccidental de América del Sur. Se constituye en un Estado unitario, social y democrático de derecho cuya forma de gobierno es presidencialista con dos cámaras legislativas. Su capital y ciudad más poblada es Bogotá.12​ Es una república organizada políticamente en treinta y dos departamentos descentralizados y el Distrito Capital de Bogotá,13​ sede del Gobierno nacional. </p>
+            </div>
+            <div class="col-3" id="cont">
+                <h3 class="subtitulosPie">Contacto</h3>
+                <a href="https://www.instagram.com/" target="_blank" class="bi bi-instagram" id="redes"> Instagram</a><br>
+                <a href="https://www.facebook.com/" target="_blank" class="bi bi-facebook" id="redes">  Facebook</a><br>
+                <a href="https://web.whatsapp.com/" target="_blank" class="bi bi-whatsapp" id="redes">  +57 344 222 2290</a><br>
+                <a href="https://gmail.com/" target="_blank" class="bi bi-envelope-at" id="redes">  Gmail </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
