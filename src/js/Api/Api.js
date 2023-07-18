@@ -2,6 +2,8 @@ import renderDepartamento from "../renders/renderDepartamento.js";
 import renderSelectDepar from "../renders/renderSelectDepar.js"
 import renderCuidad from "../renders/renderCuidad.js"
 import renderSelectDeparAct from "../renders/renderSelectDeparAct.js"
+import renderSelectClima from "../renders/renderSelectClima.js"
+import {getClima} from "../Api_Clima/ApiClima.js"
 
 const URL = "http://localhost:3000"
 const headers = new Headers ({'Content-Type': 'application/json'});
@@ -111,4 +113,18 @@ export async function putCuidad(data, id){
 export async function getInfoDeparAct(){
     let data = await (await fetch(`${URL}/Departamentos`)).json();
     renderSelectDeparAct(data);
+}
+
+//peticion para renderizar el select de mostrar Clima
+
+export async function getInfoCuidad(){
+    let data = await (await fetch(`${URL}/Ciudades`)).json();
+    renderSelectClima(data);
+}
+
+//peticion para taer informacion de las latitudes
+
+export async function getCoordenadasCuidad(id){
+    let data = await (await fetch(`${URL}/Ciudades/${id}`)).json();
+    getClima(data);
 }
