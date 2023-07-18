@@ -32,7 +32,21 @@ export async function deleteDepartamento(tr,id){
         body: JSON.stringify(data)
     };
 
+    let puntos = await(await fetch(`${URL}/Ciudades?departamentoId=${id}`)).json();
+
+    for(const punto of puntos){
+        let puntoId = punto.id;
+        let configuracionPunto = {
+            method: 'DELETE',
+            headers: headers
+        }
+
+    let delPunto = await(await fetch(`${URL}/Ciudades/${puntoId}`, configuracionPunto)).json();
+}
+
     let del = await(await fetch(`${URL}/Departamentos/${id}`,config)).json();
+
+
 }
 
 export async function putDepartamento(data,id) {

@@ -1,11 +1,11 @@
 export default function renderSelectDepar(data){
-    let selectDepartamento2 = document.querySelector("#selectDepartamento2")
+    let selectDepartamento = document.querySelector("#selectDepartamento")
 
-    selectDepartamento2.innerHTML = "";
+    selectDepartamento.innerHTML = "";
 
     let option = document.createElement("option");
     option.innerText = "Seleccione la ruta";
-    selectDepartamento2.appendChild(option);
+    selectDepartamento.appendChild(option);
 
     data.forEach((depar)=>{
         let option = document.createElement("option");
@@ -14,6 +14,6 @@ export default function renderSelectDepar(data){
             ${depar.nomDepartamento}
         `;
 
-        selectDepartamento2.appendChild(option);
+        selectDepartamento.appendChild(option);
     });
 };
